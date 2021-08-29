@@ -3,13 +3,13 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDp09M06WWhC30FHsSfSHjK3IMrvCNlOBk",
-  authDomain: "challenge-be63b.firebaseapp.com",
-  projectId: "challenge-be63b",
-  storageBucket: "challenge-be63b.appspot.com",
-  messagingSenderId: "566159496466",
-  appId: "1:566159496466:web:9feb99b299149f22f70fcb",
-  measurementId: "G-PJ281K369D"
+  apiKey: "AIzaSyBGrWLAIn8KmdZD0kkFVU_XOgXXXkb4vg0",
+  authDomain: "challenge-2d7f3.firebaseapp.com",
+  projectId: "challenge-2d7f3",
+  storageBucket: "challenge-2d7f3.appspot.com",
+  messagingSenderId: "500556900954",
+  appId: "1:500556900954:web:823b9b26862634d20c8663",
+  measurementId: "G-J96D2ZSLTN"
 };
 
   
