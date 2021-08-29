@@ -12,10 +12,8 @@ import axios from "axios";
 function Payment() {
 	const [{ basket, user }, dispatch] = useStateValue();
 	const history = useHistory();
-
 	const stripe = useStripe();
 	const elements = useElements();
-
 	const [clientSecret, setClientSecret] = useState(true);
 	const [succeeded, setSucceeded] = useState(false);
 	const [processing, setProcessing] = useState("");
@@ -23,7 +21,6 @@ function Payment() {
 	const [disabled, setDisabled] = useState(true);
 
 	useEffect(() => {
-		// generate the special stripe secret which allows us to charge a customer
 		const getClientSecret = async () => {
 			const response = await axios.post(
 				`https://n0ncv.sse.codesandbox.io/payments/create?total=${
@@ -68,8 +65,6 @@ function Payment() {
 	};
 
 	const handleChange = (event) => {
-		// Listen for changes in the CardElement
-		// and display any errors as the customer types their card details
 		setDisabled(event.empty);
 		setError(event.error ? event.error.message : "");
 	};
